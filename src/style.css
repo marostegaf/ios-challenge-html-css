@@ -52,7 +52,7 @@ body {
     gap: 10px;
 
     text-align: center;
-    margin-top: 45px;
+    margin-top: 35px;
 }
 
 .section-1 h1 {
@@ -82,6 +82,7 @@ body {
     width: 35%;
     background-color: #ffffff;
     border-radius: 20px;
+    box-shadow: 0 0 20px #0000002c;
 }
 
 .section-2-content {
@@ -121,6 +122,11 @@ body {
     text-align: center;
 }
 
+.section-3 iframe {
+    width: 784px;
+    height: 441px;
+}
+
 .section-3-content {
     display: flex;
     flex-direction: column;
@@ -143,7 +149,7 @@ body {
 /* SECTION 4 */
 
 .section-4 {
-    margin-top: 5%;
+    margin: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,6 +162,7 @@ body {
     background-color: #ffffff;
     padding: 25px;
     border-radius: 20px;
+    box-shadow: 0 0 20px #0000002c;
 }
 
 .section-4 ul li {
@@ -200,20 +207,27 @@ body {
 
 /* FOOTER */
 
+footer {
+    border-top: 2px solid #1D1D1F;
+    border-image: linear-gradient(to right, #5755FE, #FF71CD) 1;
+}
+
 footer h2 {
     font-size: 21px;
-    font-weight: 400;
+    font-weight: 500;
     padding: 15px;
     text-align: center;
     color: #1D1D1F;
-    border-top: 2px solid #1D1D1F;
-    border-image: linear-gradient(to right, #5755FE, #FF71CD) 1;
     letter-spacing: 0.2px;
+}
+
+.nome {
+    color: #5755FE;
 }
 
 /* RESPONSIVIDADE */
 
-@media (max-width: 1000px) {
+@media (max-width: 500px) {
     .section-2 {
         flex-direction: column;
         gap: 50px;
@@ -226,5 +240,30 @@ footer h2 {
     .section-2-content {
         text-align: center;
         width: 90%;
+    }
+
+    .section-3 iframe {
+        width: 350px;
+        height: 250px;
+    }
+
+    .section-4 {
+        margin: 5% 0;
+        flex-direction: column;
+    }
+
+    .section-4 ul {
+        margin-top: 5%;
+        width: 85%;
+    }
+
+    .section-4 h1 {
+        text-align: center;
+        font-size: 50px;
+        color: #1D1D1F;
+    }
+
+    footer {
+        margin-top: 15%;
     }
 }
