@@ -235,6 +235,7 @@ footer h2 {
 
     .section-2 img {
         width: 90%;
+        box-shadow: 0 0;
     }
 
     .section-2-content {
@@ -243,9 +244,10 @@ footer h2 {
     }
 
     .section-3 iframe {
-        width: 350px;
-        height: 250px;
+        width: 336.5px;
+        height: 189.5px;
     }
+    
 
     .section-4 {
         margin: 5% 0;
@@ -255,6 +257,7 @@ footer h2 {
     .section-4 ul {
         margin-top: 5%;
         width: 85%;
+        gap: 20px;
     }
 
     .section-4 h1 {
