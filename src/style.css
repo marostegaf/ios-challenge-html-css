@@ -5,6 +5,12 @@
     font-style: normal;
 }
 
+:root {
+    --cor-primaria: #5755FE;
+    --cor-secundaria: #FF71CD;
+    --cor-terciaria: #1D1D1F;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -31,7 +37,7 @@ body {
 }
 
 .section-0 h2 {
-    color: #5755FE;
+    color: var(--cor-primaria);
 }
 
 .section-0-content {
@@ -52,18 +58,22 @@ body {
     gap: 10px;
 
     text-align: center;
-    margin-top: 35px;
+    margin-top: 30px;
 }
 
 .section-1 h1 {
     font-size: 50px;
-    color: #1D1D1F;
+    color: var(--cor-terciaria);
+}
+
+.section-1 span {
+    display: inline;
 }
 
 .section-1 p {
     width: 85%;
     font-size: 21px;
-    color: #1D1D1F;
+    color: var(--cor-terciaria);
     font-weight: 400;
     letter-spacing: 0.2px;
 }
@@ -95,18 +105,18 @@ body {
 
 .section-2 h1 {
     font-size: 50px;
-    color: #FF71CD;
+    color: var(--cor-secundaria);
 }
 
 .section-2 p {
     font-size: 21px;
-    color: #1D1D1F;
+    color: var(--cor-terciaria);
     font-weight: 400;
     letter-spacing: 0.2px;
 }
 
 .iphone-os {
-    color: #FF71CD;
+    color: var(--cor-secundaria);
     text-decoration: underline;
 }
 
@@ -136,12 +146,12 @@ body {
 
 .section-3 h1 {
     font-size: 50px;
-    color: #5755FE;
+    color: var(--cor-primaria);
 }
 
 .section-3 p {
     font-size: 21px;
-    color: #1D1D1F;
+    color: var(--cor-terciaria);
     font-weight: 400;
     letter-spacing: 0.2px;
 }
@@ -173,7 +183,7 @@ body {
 
 .section-4 ul li p {
     font-size: 20px;
-    color: #1D1D1F;
+    color: var(--cor-terciaria);
     letter-spacing: 0.2px;
 }
 
@@ -187,7 +197,7 @@ body {
     font-size: 25px;
     font-weight: 400;
     letter-spacing: 0.2px;
-    color: #5755FE;
+    color: var(--cor-primaria);
 }
 
 .section-4 a:hover {
@@ -197,12 +207,12 @@ body {
 .section-4 h1 {
     text-align: right;
     font-size: 50px;
-    color: #1D1D1F;
+    color: var(--cor-terciaria);
 }
 
 .modelos-recentes {
     display: block;
-    color: #5755FE;
+    color: var(--cor-primaria);
 }
 
 /* FOOTER */
@@ -217,17 +227,21 @@ footer h2 {
     font-weight: 500;
     padding: 15px;
     text-align: center;
-    color: #1D1D1F;
+    color: var(--cor-terciaria);
     letter-spacing: 0.2px;
 }
 
 .nome {
-    color: #5755FE;
+    color: var(--cor-primaria);
 }
 
 /* RESPONSIVIDADE */
 
 @media (max-width: 500px) {
+    .section-1 span {
+        display: block;
+    }
+
     .section-2 {
         flex-direction: column;
         gap: 50px;
