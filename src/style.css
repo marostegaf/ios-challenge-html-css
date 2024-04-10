@@ -20,8 +20,44 @@
     font-family: "SF Pro Display", serif;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 1.2% 5%;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: transparent;
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.atalhos {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.atalhos p {
+    font-size: 17px;
+    color: var(--cor-terciaria);
+    font-weight: 800;
+    letter-spacing: 0.2px;
+}
+
+.atalhos p:hover {
+    color: var(--cor-primaria)
+}
+
+header img {
+    width: 40px;
+}
+
 body {
     background-color: #F5F5F7;
+    scroll-margin-top: -100px;
 }
 
 /* SECTION 0 */
@@ -34,6 +70,7 @@ body {
     gap: 8px;
 
     margin: 20px;
+    margin-top: 5.5%;
 }
 
 .section-0 h2 {
@@ -238,6 +275,10 @@ footer h2 {
 /* RESPONSIVIDADE */
 
 @media (max-width: 500px) {
+    header {
+        display: none;
+    }
+    
     .section-1 span {
         display: block;
     }
