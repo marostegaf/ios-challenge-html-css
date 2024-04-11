@@ -5,6 +5,8 @@
     font-style: normal;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
     --cor-primaria: #5755FE;
     --cor-secundaria: #FF71CD;
@@ -21,10 +23,6 @@
 }
 
 header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
     padding: 1.2% 5%;
 
     display: flex;
@@ -41,10 +39,12 @@ header {
 }
 
 .atalhos p {
+    font-family: "Poppins", sans-serif;
     font-size: 17px;
-    color: var(--cor-terciaria);
-    font-weight: 800;
+    color: #39393d;
+    font-weight: 700;
     letter-spacing: 0.2px;
+    transition: .3s;
 }
 
 .atalhos p:hover {
@@ -70,7 +70,7 @@ body {
     gap: 8px;
 
     margin: 20px;
-    margin-top: 5.5%;
+    margin-top: 2%;
 }
 
 .section-0 h2 {
@@ -274,7 +274,7 @@ footer h2 {
 
 /* RESPONSIVIDADE */
 
-@media (max-width: 500px) {
+@media (max-width: 750px) {
     header {
         display: none;
     }
