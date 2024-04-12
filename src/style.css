@@ -169,11 +169,6 @@ body {
     text-align: center;
 }
 
-.section-3 iframe {
-    width: 784px;
-    height: 441px;
-}
-
 .section-3-content {
     display: flex;
     flex-direction: column;
@@ -191,6 +186,22 @@ body {
     color: var(--cor-terciaria);
     font-weight: 400;
     letter-spacing: 0.2px;
+}
+
+.video {
+    width: 58%;
+    height: 58%;
+    position: relative;
+    padding-bottom: 32.6%;
+    
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* SECTION 4 */
@@ -289,7 +300,7 @@ footer h2 {
     }
 
     .section-2 img {
-        width: 90%;
+        width: 91%;
         box-shadow: 0 0;
     }
 
@@ -298,12 +309,19 @@ footer h2 {
         width: 90%;
     }
 
-    .section-3 iframe {
-        width: 336.5px;
-        height: 189.5px;
+    .video {
+        width: 85%;
+        height: 85%;
+        position: relative;
+        padding-bottom: 47.8%;  
     }
     
 
+    /* .section-3 iframe {
+        width: 336.5px;
+        height: 189.5px;
+    } */
+    
     .section-4 {
         margin: 5% 0;
         flex-direction: column;
