@@ -285,7 +285,7 @@ footer h2 {
 
 /* RESPONSIVIDADE */
 
-@media (max-width: 750px) {
+@media (max-width: 850px) {
     header {
         display: none;
     }
@@ -315,12 +315,6 @@ footer h2 {
         position: relative;
         padding-bottom: 56.2%;  
     }
-    
-
-    /* .section-3 iframe {
-        width: 336.5px;
-        height: 189.5px;
-    } */
     
     .section-4 {
         margin: 5% 0;
